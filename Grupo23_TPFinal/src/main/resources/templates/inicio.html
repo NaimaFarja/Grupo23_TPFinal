@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
 		<head>
 			<meta charset="UTF-8">
-			<title>Inicio</title>
+			<title>inicio</title>
+			<link rel="styLesheet" th:href="@{/css/estilo.css}">
 		</head>
 			<body>
-				<header>
-					<h1><img src="../static/images/logo.png" width="250px" title="Logo de Nutri Vida" alt="logo de Nutri Vida"></h1>
-					<nav>
-						<ul style="text-align:center;"> 
-							<li style= "list-style: none;" >
-								<a>Inicio</a> 
-								<a>Registrarme</a> 
-								<a>Servicios</a> 
-							    <a>Recetas</a> 
-								<a>Testimonio</a> 
-							    <a>Contáctanos</a> 
-							</li>
-						</ul>
-					</nav>					
-				</header>
+		<header th:replace = "~{layouts/header :: header}"></header>
+
 				
 					<h2>Nosotros Somos Nutri Vida</h2>
 					<br><br>
